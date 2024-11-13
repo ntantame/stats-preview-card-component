@@ -1,0 +1,132 @@
+/* Styles généraux */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cadre-principale {
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    max-width: 375px;
+    width: 100%;
+    margin: 5% 5%; /* Centré avec des marges */
+}
+
+.cadre-principale img {
+    width: 100%;
+    display: block;
+}
+
+.TextSection {
+    text-align: center;
+    padding: 20px;
+}
+
+.text1 {
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: hsl(0, 0%, 100%);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.text2 {
+    padding-top: 1em;
+    font-size: 1.3rem;
+    color: hsla(0, 0%, 100%, 0.466);
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+.text3 {
+    text-transform: uppercase;
+    padding: 1.5em 7em;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.text3 div {
+    text-align: center;
+}
+
+.text3 span {
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+/* Styles pour les écrans de bureau */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+        background-color: hsl(233, 47%, 7%);
+    }
+    
+    .cadre-principale {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .MyImg {
+        width: 50%;
+    }
+
+    .MyImg img {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .TextSection {
+        text-align: left;
+        padding: 3em;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text1 {
+        font-size: 2.2rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .text2 {
+        font-size: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        color: hsla(0, 0%, 100%, 0.7);
+    }
+
+    .text3 {
+        flex-direction: row;
+        gap: 2em;
+        padding: 2em 0 0;
+        font-size: 2rem;
+    }
+
+    .text3 div {
+        text-align: left;
+    }
+
+    .text3 span {
+        font-size: 0.78rem;
+    }
+}
